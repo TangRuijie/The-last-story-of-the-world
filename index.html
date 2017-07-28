@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='stylesheet' type="text/css" href="css/format.css" />
+        <script src='js/script.js'></script>
+        <script src='js/game_logic.js'></script>
+    </head>
+    <body onload='game_system.system_configure()'>
+        <h1 id='title'>世界の終わりと最後の物語</h1>
+        <h1 id='score'>Score: 0</h1>
+        <h1 id='highscore'>High Score: 0</h1>
+        <img src='image/title.png' id='bg_img'>
+        <button class='game_button' id='start' onclick='battle_interface()'>自由模式</button>
+        <button class='game_button' id='scene' onclick='scenario(1)'>剧情模式</button>
+        <button class='game_button' id='restart' onclick='battle_interface()'>重新开始</button>
+        <button class='game_button' id='return' onclick='return_title()'>返回标题</button>
+        <button class='game_button' id='pause' onclick='game_pause()'>暂停游戏</button>
+        <p class='help' id='up'>方向上键：上跳</p>
+        <p class='help' id='down'>方向下键：下跳</p>
+        <p class='help' id='z'>z键（可长按）：发射子弹</p>
+        <p class='help' id='x'>x键（可长按）：冲刺躲避</p>
+    </body>
+</html>
